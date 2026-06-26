@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Qatra</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --blue:    #0079F3;
+      --blue-bg: #EBF4FF;
+      --text:    #1A1A2E;
+      --muted:   #6B7280;
+      --border:  #E5E7EB;
+      --bg:      #FFFFFF;
+      --section: #F9FAFB;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    /* ── Header ── */
+    header {
+      background: var(--blue);
+      padding: 48px 24px 40px;
+      text-align: center;
+      color: #fff;
+    }
+    .logo {
+      width: 72px; height: 72px;
+      background: rgba(255,255,255,0.2);
+      border-radius: 20px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 36px;
+      margin-bottom: 16px;
+    }
+    header h1 { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; }
+    header p  { font-size: 15px; opacity: 0.85; margin-top: 6px; }
+
+    /* ── Language tabs ── */
+    .lang-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      padding: 24px 24px 0;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    .lang-tab {
+      padding: 8px 24px;
+      border-radius: 99px;
+      border: 2px solid var(--border);
+      background: transparent;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all .2s;
+    }
+    .lang-tab.active {
+      background: var(--blue);
+      border-color: var(--blue);
+      color: #fff;
+    }
+
+    /* ── Content ── */
+    .content {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 32px 24px 80px;
+    }
+
+    .section {
+      background: var(--section);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px 32px;
+      margin-bottom: 20px;
+    }
+    .section-icon {
+      font-size: 22px;
+      margin-bottom: 8px;
+      display: block;
+    }
+    .section h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--blue);
+      margin-bottom: 12px;
+    }
+    .section p  { color: #374151; margin-bottom: 10px; }
+    .section p:last-child { margin-bottom: 0; }
+    .section ul {
+      padding-left: 20px;
+      color: #374151;
+    }
+    .section ul li { margin-bottom: 6px; }
+
+    /* highlight box */
+    .highlight {
+      background: var(--blue-bg);
+      border-left: 4px solid var(--blue);
+      border-radius: 0 12px 12px 0;
+      padding: 14px 18px;
+      margin: 12px 0;
+      color: #1e3a5f;
+      font-weight: 500;
+    }
+
+    .updated {
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+      padding: 16px 0 4px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 14px;
+    }
+    footer a { color: var(--blue); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+
+    /* lang switching */
+    [data-lang="ru"] { display: none; }
+
+    @media (max-width: 600px) {
+      header { padding: 36px 16px 32px; }
+      header h1 { font-size: 22px; }
+      .section { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══ Header ══════════════════════════════════════════════════════════════ -->
+<header>
+  <div class="logo">💧</div>
+  <h1>Qatra</h1>
+  <p>Water Balance Tracker · Privacy Policy</p>
+</header>
+
+<!-- ══ Language tabs ═══════════════════════════════════════════════════════ -->
+<div class="lang-tabs">
+  <button class="lang-tab active" onclick="setLang('en')">English</button>
+  <button class="lang-tab"        onclick="setLang('ru')">Русский</button>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════════════════════
+     ENGLISH
+═══════════════════════════════════════════════════════════════════════════ -->
+<div class="content" id="content-en">
+
+  <p class="updated">Last updated: June 26, 2026</p>
+
+  <!-- Intro -->
+  <div class="section" style="margin-top:24px">
+    <span class="section-icon">📋</span>
+    <h2>Introduction</h2>
+    <p>
+      Qatra ("the app") is a personal water balance tracker developed for Android.
+      This Privacy Policy explains what data the app accesses, how it is handled,
+      and what rights you have as a user.
+    </p>
+    <div class="highlight">
+      Qatra does not collect, transmit, or share any personal data with third parties.
+      All data stays on your device.
+    </div>
+  </div>
+
+  <!-- 1. Information Collection -->
+  <div class="section">
+    <span class="section-icon">🔍</span>
+    <h2>1. Information Collection</h2>
+    <p>The app may ask you to optionally enter the following information to personalise
+    your daily hydration goal:</p>
+    <ul>
+      <li>Body weight</li>
+      <li>Age</li>
+      <li>Biological sex</li>
+      <li>Physical activity level</li>
+    </ul>
+    <p>The app also records:</p>
+    <ul>
+      <li>Water intake entries (amount, time, container type)</li>
+      <li>Notification reminder settings (time window, interval, sound)</li>
+      <li>Selected interface language and display units</li>
+    </ul>
+    <p>
+      <strong>None of this information is sent to any server.</strong>
+      It is processed locally on your device solely to calculate your goal and
+      display statistics.
+    </p>
+  </div>
+
+  <!-- 2. Data Storage -->
+  <div class="section">
+    <span class="section-icon">💾</span>
+    <h2>2. Data Storage</h2>
+    <p>
+      All data is stored exclusively on your device using the operating system's
+      local storage (AsyncStorage / SQLite). The app does not use any cloud
+      database, remote API, or analytics service.
+    </p>
+    <p>
+      <strong>Backup &amp; Restore.</strong> The app provides an optional export
+      feature that saves your data to a file on your device. You choose where this
+      file is stored and you are the only one who has access to it.
+      The app does not upload this file anywhere automatically.
+    </p>
+    <div class="highlight">
+      Uninstalling the app permanently deletes all locally stored data.
+      Make an export backup before uninstalling if you want to keep your history.
+    </div>
+  </div>
+
+  <!-- 3. Third Parties -->
+  <div class="section">
+    <span class="section-icon">🔒</span>
+    <h2>3. Third-Party Services</h2>
+    <p>Qatra does <strong>not</strong> integrate any of the following:</p>
+    <ul>
+      <li>Advertising networks (no ads of any kind)</li>
+      <li>Analytics SDKs (Firebase Analytics, Amplitude, Mixpanel, etc.)</li>
+      <li>Crash-reporting services (Sentry, Crashlytics, etc.)</li>
+      <li>Social login or social SDKs</li>
+      <li>Payment processors</li>
+    </ul>
+    <p>
+      The app uses the <strong>open-source React Native framework</strong> and the
+      <strong>Expo SDK</strong> for its runtime. These do not collect user data
+      in production builds.
+    </p>
+  </div>
+
+  <!-- 4. Notifications -->
+  <div class="section">
+    <span class="section-icon">🔔</span>
+    <h2>4. Notifications</h2>
+    <p>
+      Qatra can send local reminder notifications to encourage you to drink water.
+      These are scheduled entirely on-device using the Android notification system.
+      No push notification server or third-party messaging service is used.
+      No data leaves your device as a result of these notifications.
+    </p>
+    <p>
+      You can enable or disable reminders at any time in the app settings or in
+      your device's system notification settings.
+    </p>
+  </div>
+
+  <!-- 5. Permissions -->
+  <div class="section">
+    <span class="section-icon">⚙️</span>
+    <h2>5. Android Permissions</h2>
+    <p>The app requests the following Android permissions:</p>
+    <ul>
+      <li><strong>POST_NOTIFICATIONS</strong> — to display water reminder notifications.</li>
+      <li><strong>SCHEDULE_EXACT_ALARM / USE_EXACT_ALARM</strong> — to deliver reminders at precise times.</li>
+      <li><strong>READ / WRITE_EXTERNAL_STORAGE</strong> (Android ≤ 12) — only used if you manually trigger a data export.</li>
+    </ul>
+    <p>No permission is used to collect or transmit personal data.</p>
+  </div>
+
+  <!-- 6. Children's Privacy -->
+  <div class="section">
+    <span class="section-icon">👶</span>
+    <h2>6. Children's Privacy</h2>
+    <p>
+      Qatra does not knowingly collect any personal information from children
+      under the age of 13 (or the applicable age of digital consent in your
+      jurisdiction). Since the app does not transmit any data at all, there is
+      no risk of inadvertent data collection from any age group.
+    </p>
+    <p>
+      If you believe a child has provided personal information through the app,
+      please contact us and we will take appropriate steps.
+    </p>
+  </div>
+
+  <!-- 7. Changes -->
+  <div class="section">
+    <span class="section-icon">📝</span>
+    <h2>7. Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. Any changes will be
+      reflected on this page with an updated "Last updated" date.
+      We encourage you to review this page periodically.
+    </p>
+    <p>
+      Continued use of the app after changes are posted constitutes your
+      acceptance of the revised policy.
+    </p>
+  </div>
+
+  <!-- 8. Contact -->
+  <div class="section">
+    <span class="section-icon">✉️</span>
+    <h2>8. Contact Us</h2>
+    <p>
+      If you have any questions or concerns about this Privacy Policy or the
+      app's data practices, please contact us at:
+    </p>
+    <div class="highlight">
+      📧 <a href="mailto:usmon.sulaymonov@gmail.com" style="color:inherit">usmon.sulaymonov@gmail.com</a>
+    </div>
+    <p>We aim to respond within 5 business days.</p>
+  </div>
+
+</div><!-- /content-en -->
+
+
+<!-- ══════════════════════════════════════════════════════════════════════════
+     RUSSIAN
+═══════════════════════════════════════════════════════════════════════════ -->
+<div class="content" id="content-ru" data-lang="ru">
+
+  <p class="updated">Последнее обновление: 26 июня 2026 г.</p>
+
+  <!-- Intro -->
+  <div class="section" style="margin-top:24px">
+    <span class="section-icon">📋</span>
+    <h2>Введение</h2>
+    <p>
+      Qatra — персональный трекер водного баланса для Android.
+      Настоящая Политика конфиденциальности описывает, к каким данным приложение
+      имеет доступ, как они обрабатываются и какими правами вы обладаете как пользователь.
+    </p>
+    <div class="highlight">
+      Qatra не собирает, не передаёт и не передаёт персональные данные третьим лицам.
+      Все данные остаются на вашем устройстве.
+    </div>
+  </div>
+
+  <!-- 1 -->
+  <div class="section">
+    <span class="section-icon">🔍</span>
+    <h2>1. Сбор информации</h2>
+    <p>Приложение может предложить вам ввести следующую информацию для расчёта
+    персональной нормы потребления воды:</p>
+    <ul>
+      <li>Масса тела</li>
+      <li>Возраст</li>
+      <li>Биологический пол</li>
+      <li>Уровень физической активности</li>
+    </ul>
+    <p>Также приложение сохраняет:</p>
+    <ul>
+      <li>Записи о выпитой воде (объём, время, тип ёмкости)</li>
+      <li>Настройки напоминаний (временное окно, интервал, звук)</li>
+      <li>Выбранный язык интерфейса и единицы измерения</li>
+    </ul>
+    <p>
+      <strong>Ни одна из этих данных не отправляется на серверы.</strong>
+      Вся обработка происходит локально на вашем устройстве исключительно для
+      расчёта нормы и отображения статистики.
+    </p>
+  </div>
+
+  <!-- 2 -->
+  <div class="section">
+    <span class="section-icon">💾</span>
+    <h2>2. Хранение данных</h2>
+    <p>
+      Все данные хранятся исключительно на вашем устройстве в локальном хранилище
+      операционной системы (AsyncStorage / SQLite). Приложение не использует
+      облачные базы данных, удалённые API или аналитические сервисы.
+    </p>
+    <p>
+      <strong>Резервное копирование.</strong> Приложение предоставляет опциональную
+      возможность экспорта данных в файл на вашем устройстве. Вы сами выбираете,
+      где сохранить файл, и только вы имеете к нему доступ.
+      Приложение не загружает этот файл никуда автоматически.
+    </p>
+    <div class="highlight">
+      Удаление приложения необратимо уничтожает все локально сохранённые данные.
+      Сделайте резервную копию перед удалением, если хотите сохранить историю.
+    </div>
+  </div>
+
+  <!-- 3 -->
+  <div class="section">
+    <span class="section-icon">🔒</span>
+    <h2>3. Сторонние сервисы</h2>
+    <p>Qatra <strong>не</strong> включает никаких:</p>
+    <ul>
+      <li>Рекламных сетей (реклама отсутствует полностью)</li>
+      <li>Аналитических SDK (Firebase Analytics, Amplitude, Mixpanel и т.п.)</li>
+      <li>Сервисов отчётов о сбоях (Sentry, Crashlytics и т.п.)</li>
+      <li>SDK социальных сетей или систем входа через соцсети</li>
+      <li>Платёжных систем</li>
+    </ul>
+    <p>
+      Приложение построено на <strong>React Native</strong> и <strong>Expo SDK</strong>
+      с открытым исходным кодом. В production-сборках они не собирают данные пользователей.
+    </p>
+  </div>
+
+  <!-- 4 -->
+  <div class="section">
+    <span class="section-icon">🔔</span>
+    <h2>4. Уведомления</h2>
+    <p>
+      Qatra может отправлять локальные уведомления-напоминания для соблюдения
+      питьевого режима. Они планируются полностью на устройстве средствами Android.
+      Никакой push-сервер или сторонняя служба сообщений не используется.
+      В результате работы уведомлений никакие данные с устройства не передаются.
+    </p>
+    <p>
+      Вы можете включить или отключить напоминания в любое время в настройках
+      приложения или в системных настройках уведомлений устройства.
+    </p>
+  </div>
+
+  <!-- 5 -->
+  <div class="section">
+    <span class="section-icon">⚙️</span>
+    <h2>5. Разрешения Android</h2>
+    <p>Приложение запрашивает следующие разрешения Android:</p>
+    <ul>
+      <li><strong>POST_NOTIFICATIONS</strong> — для отображения напоминаний о воде.</li>
+      <li><strong>SCHEDULE_EXACT_ALARM / USE_EXACT_ALARM</strong> — для доставки напоминаний в точное время.</li>
+      <li><strong>READ / WRITE_EXTERNAL_STORAGE</strong> (Android ≤ 12) — только при ручном экспорте данных.</li>
+    </ul>
+    <p>Ни одно разрешение не используется для сбора или передачи персональных данных.</p>
+  </div>
+
+  <!-- 6 -->
+  <div class="section">
+    <span class="section-icon">👶</span>
+    <h2>6. Конфиденциальность детей</h2>
+    <p>
+      Qatra не собирает намеренно никакой персональной информации от детей
+      до 13 лет (или иного применимого возраста согласия в вашей юрисдикции).
+      Поскольку приложение вообще не передаёт никакие данные, риска случайного
+      сбора данных любой возрастной группы нет.
+    </p>
+    <p>
+      Если вы считаете, что ребёнок предоставил персональные данные через
+      приложение, свяжитесь с нами — мы примем необходимые меры.
+    </p>
+  </div>
+
+  <!-- 7 -->
+  <div class="section">
+    <span class="section-icon">📝</span>
+    <h2>7. Изменения политики</h2>
+    <p>
+      Мы можем периодически обновлять настоящую Политику конфиденциальности.
+      Все изменения будут отражены на этой странице с обновлённой датой
+      «Последнее обновление». Рекомендуем периодически проверять эту страницу.
+    </p>
+    <p>
+      Продолжение использования приложения после публикации изменений означает
+      ваше согласие с обновлённой политикой.
+    </p>
+  </div>
+
+  <!-- 8 -->
+  <div class="section">
+    <span class="section-icon">✉️</span>
+    <h2>8. Контакты</h2>
+    <p>
+      Если у вас есть вопросы или замечания по настоящей Политике
+      конфиденциальности или практике обработки данных, пожалуйста, свяжитесь
+      с нами:
+    </p>
+    <div class="highlight">
+      📧 <a href="mailto:usmon.sulaymonov@gmail.com" style="color:inherit">usmon.sulaymonov@gmail.com</a>
+    </div>
+    <p>Мы стараемся отвечать в течение 5 рабочих дней.</p>
+  </div>
+
+</div><!-- /content-ru -->
+
+
+<!-- ══ Footer ══════════════════════════════════════════════════════════════ -->
+<footer>
+  <p>© 2026 Qatra · Water Balance Tracker</p>
+  <p style="margin-top:6px">
+    Questions? <a href="mailto:usmon.sulaymonov@gmail.com">usmon.sulaymonov@gmail.com</a>
+  </p>
+</footer>
+
+<script>
+  function setLang(lang) {
+    document.getElementById('content-en').style.display = lang === 'en' ? '' : 'none';
+    document.getElementById('content-ru').style.display = lang === 'ru' ? '' : 'none';
+    document.querySelectorAll('.lang-tab').forEach(function(btn, i) {
+      btn.classList.toggle('active', (i === 0 && lang === 'en') || (i === 1 && lang === 'ru'));
+    });
+  }
+</script>
+
+</body>
+</html>
